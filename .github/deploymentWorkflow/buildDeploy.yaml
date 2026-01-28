@@ -48,7 +48,7 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      # Setup Go. Remember to keep the version up to date with your local build environment
+      # Setup Go. Remember to keep the version up to date with your local bauild environment
       - name: Setup Go
         uses: actions/setup-go@v6.2.0
         with:
@@ -60,12 +60,13 @@ jobs:
         uses: peaceiris/actions-hugo@v3.0.0
         with:
           # renovate: datasource=github-releases depName=gohugoio/hugo
-          hugo-version: '0.154.5'
+          hugo-version: 'latest'
           extended: true
 
       # Build your site and dump the files in ./public
       - name: Build
-        run: hugo --minify
+        run: npm ci
+        run: hugo -gc --minify
 
       # Upload the files outputtet files so the next job can get to them
       - name: Upload artifact
