@@ -2,7 +2,7 @@
 ## CHANGE THESE
 ############################
 
-baseURL: "https://sebos.frenchfamily.fr"
+baseURL: "https://sebos.frenchfamily.fr/"
 title: Sebos
 
 ############################
@@ -33,4 +33,3 @@ privacy:
   youTube:
     disable: false
     privacyEnhanced: false
-    
