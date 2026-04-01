@@ -1,4 +1,4 @@
-module github.com/sebviolet/hugo-qubt
+module github.com/sebviolet/sebos-website
 
 go 1.26.1
 
