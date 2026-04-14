@@ -3,6 +3,8 @@ baseURL = 'https://www.frenchfamily.fr/'
 title = 'French Family'
 languageCode = 'en-us'
 buildFuture = true
+disableHugoGeneratorInject = true
+enableRobotsTXT = false
 
 [markup.highlight]
   # style = "rose-pine"
@@ -20,3 +22,8 @@ buildFuture = true
   category = 'categories'
   tag = 'tags'
 
+[menus]
+  [[menus.footer]]
+    name = 'Support'
+    pageRef = '/support'
+    weight = 10
