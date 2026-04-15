@@ -1,20 +1,24 @@
 ---
-title: "L'éveil de Nika : Pourquoi le Gear 5 change tout"
-date: 2026-04-02
-image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?q=80&w=1000"
-tags: ["Luffy", "Puissance"]
-# card specific config
-summary: A summary of the blog post
-cardimage: photo1_card.jpeg
-authors:
-  - John Doe: author.png
-
-# post specific config
-featureimage: photo1.jpeg
-caption: Some image caption
-toc: true
+title: "Les fruits du Démon"
+author: "FrenchFamily"
+date: 2026-04-08T12:00:00+02:00
+draft: false
+description: "Les fruits du Démon : pouvoirs et mythologie dans One Piece"
+tags: ["Luffy", "Gear 5", "Analyse"]
+image: img/one_piece.jpg
 ---
 
-Le combat contre Kaido a révélé la véritable nature du fruit de Luffy : le **Hito Hito no Mi, modèle Nika**. 
+# Les fruits du Démon : pouvoirs et mythologie dans One Piece
 
-Ce pouvoir n'est limité que par l'imagination de son utilisateur. Avec son aspect cartoon et sa liberté totale de mouvement, Luffy est devenu le "Guerrier de la Libération". C'est un tournant majeur pour la narration du manga.
+Les **Fruits du Démon** sont des fruits mystérieux qui confèrent des pouvoirs spéciaux à ceux qui les consomment, au prix de leur capacité à nager.
+
+## Fonctionnement
+Chaque Fruit du Démon donne un pouvoir unique, comme l'élasticité, le feu, ou la manipulation des éléments. Par exemple :
+- **Gomu Gomu no Mi** : donne à Luffy ses propriétés élastiques.
+- **Mera Mera no Mi** : permet de manipuler le feu.
+
+## Impact dans l'univers
+Les Fruits du Démon sont très recherchés, car ils offrent un avantage considérable en combat. Cependant, leur consommation est irréversible, ce qui ajoute une dimension stratégique à leur acquisition.
+
+## Mythologie
+Les Fruits du Démon sont liés à une mythologie mystérieuse, avec des légendes entourant leur origine et leur pouvoir.

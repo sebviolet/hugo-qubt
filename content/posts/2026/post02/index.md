@@ -1,29 +1,22 @@
 ---
-title: "Qu'est-ce que le One Piece ? Les théories les plus folles"
-date: 2026-04-01
-draf: false
-description: "Qu'est-ce que le One Piece ? Les théories les plus folles"
+title: "Les îles et les royaumes de One Piece"
+author: "FrenchFamily"
+date: 2026-04-08T12:00:00+02:00
+draft: false
+description: "Les îles et les royaumes de One Piece : exploration des lieux mythiques"
 tags: ["Luffy", "Gear 5", "Analyse"]
-categories: ["Technology", "Health"]
-author: "Sebos"
-slug: "c-est-quoi-le-onepiece"
-
-# card specific config
-summary: A summary of the blog post
-cardimage: photo1_card.jpeg
-authors:
-  - John Doe: author.png
-
-# post specific config
-featureimage: photo1.jpeg
-caption: Some image caption
-toc: true
+image: /img/one_piece.jpg
 ---
 
-## Qu'est-ce que le One Piece ?
+# Les îles et les royaumes de One Piece : exploration des lieux mythiques
 
-Depuis le rire de Gol D. Roger sur Laugh Tale, le monde entier se demande ce qu'est réellement le **One Piece**. 
+L'univers de One Piece est constitué d'une multitude d'îles et de royaumes, chacun avec sa culture, ses paysages et ses enjeux.
 
-### c'est quoi ?
+## Quelques îles clés
+- **East Blue** : le point de départ de Luffy, une mer paisible mais pleine de surprises.
+- **Alabasta** : un désert aride où se déroule une grande bataille politique.
+- **Skypiea** : une île dans les cieux, mystérieuse et spirituelle.
+- **Wano** : un pays inspiré du Japon féodal, avec une culture guerrière.
 
-Est-ce un objet matériel, ou bien la réunion des mers ? Certains pensent qu'il s'agit d'un récit complet du Siècle Oublié. Ce qui est sûr, c'est qu'Eiichiro Oda a promis que ce n'était pas juste "l'amitié créée en chemin".
+## Importance dans l'intrigue
+Chaque lieu visité apporte son lot de défis, de révélations et de rencontres, contribuant à l'évolution des personnages et à la progression de la quête.

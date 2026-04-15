@@ -1,5 +1,4 @@
 baseURL = 'https://www.frenchfamily.fr/'
-#baseURL = 'https://example.org/'
 title = 'French Family'
 languageCode = 'en-us'
 buildFuture = true
@@ -7,14 +6,7 @@ disableHugoGeneratorInject = true
 enableRobotsTXT = false
 
 [markup.highlight]
-  # style = "rose-pine"
-  # style = "tokyonight-moon"
-  # style = "tokyonight-storm"
-  # style = "tokyonight-night"
   style = "catppuccin-mocha"
-  # style = "catppuccin-frappe"
-  # style = "catppuccin-macchiato"
-  # style = "rose-pine-moon"
   # uses inline styles (easy, no CSS setup)
   noClasses = true
 
@@ -23,7 +15,15 @@ enableRobotsTXT = false
   tag = 'tags'
 
 [menus]
-  [[menus.footer]]
-    name = 'Support'
-    pageRef = '/support'
+  [[menus.main]]
+    name = 'About'
+    pageRef = 'about'
     weight = 10
+  [[menus.main]]
+    name = 'Blog'
+    pageRef = '/posts'
+    weight = 20
+ # [[menus.footer]]
+ #   name = 'Support'
+ #   pageRef = '/support'
+ #   weight = 10

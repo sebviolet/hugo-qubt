@@ -1,14 +1,10 @@
 ---
-title: "À propos de One Piece Explorer"
+title: "À propos de la French Family"
 date: 2026-04-08
-layout: "about"
-summary: A summary of the blog post
-cardimage: images/going-merry.jp
-featureimage: images/going-merry.jp
-caption: "Image caption :tada:"
-authors:
-  - John Doe: author.png
-toc: true
+draft: false
+description: "À propos de la French Family"
+author: "FrenchFamily"
+image: /img/one_piece.jpg
 ---
 
 ## Bienvenue sur Grand Line !

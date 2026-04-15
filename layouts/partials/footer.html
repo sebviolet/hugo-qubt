@@ -1,13 +1,17 @@
 {{ with site.Menus.footer }}
-  <nav class="menu">
-    {{ range . }}
-      {{ if $.IsMenuCurrent .Menu . }}
-        <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
-      {{ else }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-    {{ end }}
-  </nav>
+<nav class="menu">
+  {{ range . }}
+  {{ if $.IsMenuCurrent .Menu . }}
+  <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+  {{ else }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+  {{ end }}
+</nav>
 {{ end }}
 
-<center><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">(non c) [2026 French Family]</a></center>
+<center><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">(non c) [2026 French
+    Family]</a>
+  <a href="https://www.tonybtw.com/" target="_blank" rel="noopener">This website is deeply inspired by Tony
+    Banters(ByTheWay) website</a>
+</center>

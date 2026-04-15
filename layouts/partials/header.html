@@ -5,28 +5,26 @@
       <div class="nav-logo">
         <a class="navbar-brand" href="/">French Family.</a>
       </div>
-
+      
       <!-- Hamburger Toggler -->
       <button id="nav-toggler" class="nav-toggle" aria-label="Open Mobile Menu">
         <svg viewBox="0 0 20 20" class="hamburger-icon" fill="currentColor">
           <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
         </svg>
       </button>
-
       <!-- Desktop Nav -->
-      <ul id="nav-menu" class="nav-menu">
-        <!-- <li class="nav-item"><a class="nav-link" href="/">Home</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="/posts/">Blog</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="/support/">Support</a></li>
-        <li class="nav-item"><a class="nav-link" href="/tutorial/">Tutorials</a></li>
-        <li class="nav-item"><a class="nav-link" href="/community/">Community</a></li> -->
-        <!-- <div class="nav-right">
-          <a href="https://discord.gg/nXZwDb8HB5" class="discord-desktop-btn" target="_blank" rel="noopener">
-            Join Discord
-          </a>
-        </div> -->
-      </ul>
 
+      {{ with site.Menus.main }}
+      <nav class="nav-menu">
+        {{ range . }}
+        {{ if $.IsMenuCurrent .Menu . }}
+        <a class="nav-link" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+        {{ else }}
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+        {{ end }}
+      </nav>
+      {{ end }}
     </nav>
   </div>
 </header>
@@ -36,12 +34,7 @@
   <ul class="mobile-nav-list">
     <li><a class="mobile-nav-link" href="/">Home</a></li>
     <li><a class="mobile-nav-link" href="/posts/">Blog</a></li>
-   <!--  <li><a class="mobile-nav-link" href="/support/">Support</a></li>
-    <li><a class="mobile-nav-link" href="/tutorial/">Tutorials</a></li>
-    <li><a class="mobile-nav-link" href="/community/">Community</a></li> -->
-    <!-- <li class="mobile-nav-link">
-      <a href="https://discord.gg/nXZwDb8HB5" target="_blank" rel="noopener">Join Discord</a>
-    </li> -->
+    <!--<li><a class="mobile-nav-link" href="/community/">Community</a></li> -->
   </ul>
 </div>
 
