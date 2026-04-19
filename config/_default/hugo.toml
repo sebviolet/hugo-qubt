@@ -1,6 +1,6 @@
 baseURL = 'https://www.frenchfamily.fr/'
 title = 'French Family'
-languageCode = 'en-us'
+languageCode = 'fr-fr'
 buildFuture = true
 disableHugoGeneratorInject = true
 enableRobotsTXT = false
@@ -15,15 +15,19 @@ enableRobotsTXT = false
   tag = 'tags'
 
 [menus]
+  #[[menus.main]]
+  #  name = 'Home'
+  #  pageRef = '/'
+  #  weight = 10
   [[menus.main]]
     name = 'About'
-    pageRef = 'about'
+    pageRef = '/about/'
     weight = 10
   [[menus.main]]
-    name = 'Blog'
-    pageRef = '/posts'
+    name = 'Univers One Piece'
+    pageRef = '/posts/Univers_One_Piece/'
     weight = 20
- # [[menus.footer]]
- #   name = 'Support'
- #   pageRef = '/support'
- #   weight = 10
+  [[menus.main]]
+    name = 'Univers Zelda'
+    pageRef = '/posts/Univers_Zelda/'
+    weight = 30

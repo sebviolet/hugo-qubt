@@ -12,19 +12,9 @@
           <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
         </svg>
       </button>
-      <!-- Desktop Nav -->
 
-      {{ with site.Menus.main }}
-      <nav class="nav-menu">
-        {{ range . }}
-        {{ if $.IsMenuCurrent .Menu . }}
-        <a class="nav-link" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
-        {{ else }}
-        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
-        {{ end }}
-      </nav>
-      {{ end }}
+      {{ partial "nav.html" . }}
+
     </nav>
   </div>
 </header>
@@ -37,8 +27,6 @@
     <!--<li><a class="mobile-nav-link" href="/community/">Community</a></li> -->
   </ul>
 </div>
-
-<!-- Discord Desktop -->
 
 <style>
   .navbar {
