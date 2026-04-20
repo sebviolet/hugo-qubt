@@ -3,7 +3,7 @@ title = 'French Family'
 languageCode = 'fr-fr'
 buildFuture = true
 disableHugoGeneratorInject = true
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 [markup.highlight]
   style = "catppuccin-mocha"
@@ -11,7 +11,6 @@ enableRobotsTXT = false
   noClasses = true
 
 [taxonomies]
-  category = 'categories'
   tag = 'tags'
 
 [menus]

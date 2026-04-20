@@ -5,9 +5,9 @@ draft: true
 description: ""
 tags: []
 categories: []
-author: "Nischal Skanda"
+author: "xxxx"
 ---
 
-{{< img src="images/thumbnail.jpg" alt="" caption="" >}}
+{{<img src="images/thumbnail.jpg" alt="" caption="" />}}
 
 ## Introduction

@@ -2,12 +2,12 @@
 <html lang="en">
 
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="French Family" />
     <link rel="icon" type="image/png" href="/img/favicon.png" />
-    <link rel="stylesheet" href="/css/site.css" />
     <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/css/site.css" media="all" />
   </head>
 
   <body>
@@ -21,7 +21,7 @@
         <div class="column" style="flex: 1;">
           <article class="site-post">
             <h1 class="site-post-title center">{{ .Title }}</h1>
-           <!--  {{ with .Params.date }}
+            <!--  {{ with .Params.date }}
             <p class="site-post-meta center">{{ time.Format "01/02/2006" . }}</p>{{ end }} -->
 
             {{ with .Params.image }}
@@ -36,7 +36,6 @@
           </article>
         </div>
 
-        <!-- Sidebar TOC -->
         {{ if gt (len .TableOfContents) 80 }}
         <aside class="content-panel"
           style="flex: 0 0 250px; max-width: 250px; position: sticky; top: 100px; align-self: flex-start;">

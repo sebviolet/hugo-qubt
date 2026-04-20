@@ -35,6 +35,7 @@
 @font-face {
   font-family: "JetBrainsMono Nerd Font";
   src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+  font-display: auto;
   font-weight: normal;
   font-style: normal;
 }
@@ -42,10 +43,10 @@
 @font-face {
   font-family: "Jost";
   src: url('/fonts/Jost-500-Medium.ttf') format('truetype');
+  font-display: auto;
   font-weight: normal;
   font-style: normal;
 }
-
 
 ::root {
   box-sizing: border-box;
@@ -55,7 +56,6 @@ html {
   font-size: 16px;
   /* font-weight: bold; */
 }
-
 
 .container {
   margin-right: auto;
@@ -219,7 +219,6 @@ dd {
   padding-left: 10px;
 }
 
-
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -243,7 +242,6 @@ dd {
 .subnav a {
   /* margin-top: 2rem; */
   /* margin-bottom: 2rem; */
-
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -324,7 +322,6 @@ pre {
   box-sizing: border-box;
 }
 
-
 code {
   color: var(--mag);
   word-break: break-word;
@@ -344,7 +341,6 @@ strong {
 .content {
   margin-top:
 }
-
 
 .logo {
   display: block;
@@ -390,8 +386,7 @@ strong {
   flex-direction: column;
   justify-content: flex-end;
   font-weight: bold;
-  /* background-image: url("/img/tropic_island_evening.jpg"); */
-  background-image: url("/img/shaded_landscape.png");
+  background-image: url("/img/shaded_landscape.jpg");
   background-size: cover;
   background-position: center;
   color: #1a1b26;
@@ -581,8 +576,6 @@ hr {
   color: #232635;
 }
 
-.newsletter-text {}
-
 .register-button {
   width: 60%;
   padding: 10px 10px;
@@ -659,7 +652,6 @@ aside.content-panel {
   /* optional tokyonight border */
 }
 
-
 .tutorial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -689,14 +681,14 @@ aside.content-panel {
   }
 }
 
-/* .tutorial-grid { */
-/*   display: grid; */
-/*   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
-/*   gap: 2rem; */
-/*   max-width: 1280px; */
-/*   margin: 0 auto; */
-/*   padding: 0 1rem; */
-/* } */
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 .tutorial-card-title {
   font-size: 1.2rem;

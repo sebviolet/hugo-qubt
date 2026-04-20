@@ -1,4 +1,4 @@
-<header class="site-header sticky z-30">
+<header class="site-header">
   <div class="site-masthead">
     <nav class="navbar container">
       <!-- Logo -->
@@ -20,12 +20,12 @@
 </header>
 
 <!-- Mobile Nav -->
-<!-- <div id="mobile-nav-panel" class="mobile-nav hidden">
+<div id="mobile-nav-panel" class="mobile-nav hidden">
   <ul class="mobile-nav-list">
     <li><a class="mobile-nav-link" href="/">Home</a></li>
     <li><a class="mobile-nav-link" href="/posts/">Blog</a></li>
   </ul>
-</div> -->
+</div>
 
 <style>
   .navbar {
@@ -179,15 +179,15 @@
 
 <script>
   const navToggler = document.getElementById('nav-toggler');
-  //const mobileNav = document.getElementById('mobile-nav-panel');
+  const mobileNav = document.getElementById('mobile-nav-panel');
   navToggler?.addEventListener('click', () => {
     mobileNav?.classList.toggle('hidden');
   });
 
-  //const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
-  //const applyTheme = (theme) => {
-  //  document.documentElement.classList.toggle('dark', theme === 'dark');
-  //};
+  const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
+  const applyTheme = (theme) => {
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+  };
   const toggleTheme = () => {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
