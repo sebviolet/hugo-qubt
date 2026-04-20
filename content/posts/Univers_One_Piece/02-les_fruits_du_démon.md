@@ -1,6 +1,6 @@
 ---
 title: "Les fruits du Démon"
-author: "FrenchFamily"
+author: "Mathias"
 date: 2026-04-08T12:00:00+02:00
 draft: false
 description: "Les fruits du Démon : pouvoirs et mythologie dans One Piece"

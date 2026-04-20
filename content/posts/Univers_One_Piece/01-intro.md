@@ -1,6 +1,6 @@
 ---
 title: "Introduction à l'univers One Piece"
-author: "FrenchFamily"
+author: "Mathias"
 date: 2026-04-08T12:00:00+02:00
 draft: false
 description: "Introduction à l'univers de One Piece : l'histoire et les personnages principaux"

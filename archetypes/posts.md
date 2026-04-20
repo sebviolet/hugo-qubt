@@ -6,7 +6,6 @@ description: ""
 tags: []
 categories: []
 author: "Nischal Skanda"
-slug: "{{ .Name }}"
 ---
 
 {{< img src="images/thumbnail.jpg" alt="" caption="" >}}

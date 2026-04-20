@@ -5,7 +5,7 @@
       <div class="nav-logo">
         <a class="navbar-brand" href="/">French Family.</a>
       </div>
-      
+
       <!-- Hamburger Toggler -->
       <button id="nav-toggler" class="nav-toggle" aria-label="Open Mobile Menu">
         <svg viewBox="0 0 20 20" class="hamburger-icon" fill="currentColor">
@@ -20,13 +20,12 @@
 </header>
 
 <!-- Mobile Nav -->
-<div id="mobile-nav-panel" class="mobile-nav hidden">
+<!-- <div id="mobile-nav-panel" class="mobile-nav hidden">
   <ul class="mobile-nav-list">
     <li><a class="mobile-nav-link" href="/">Home</a></li>
     <li><a class="mobile-nav-link" href="/posts/">Blog</a></li>
-    <!--<li><a class="mobile-nav-link" href="/community/">Community</a></li> -->
   </ul>
-</div>
+</div> -->
 
 <style>
   .navbar {
@@ -71,6 +70,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     background: linear-gradient(to right, #7aa2f7, #ad8ee6);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -121,22 +121,6 @@
     background: none;
     border: none;
     cursor: pointer;
-  }
-
-  .discord-btn {
-    background-color: #7aa2f7;
-    color: #1a1b26;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .discord-btn:hover {
-    background-color: #5e8eff;
   }
 
   /* Mobile nav panel */
@@ -195,15 +179,15 @@
 
 <script>
   const navToggler = document.getElementById('nav-toggler');
-  const mobileNav = document.getElementById('mobile-nav-panel');
+  //const mobileNav = document.getElementById('mobile-nav-panel');
   navToggler?.addEventListener('click', () => {
     mobileNav?.classList.toggle('hidden');
   });
 
-  const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
-  const applyTheme = (theme) => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-  };
+  //const themeSwitcherBtn = document.getElementById('theme-switcher-btn');
+  //const applyTheme = (theme) => {
+  //  document.documentElement.classList.toggle('dark', theme === 'dark');
+  //};
   const toggleTheme = () => {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
