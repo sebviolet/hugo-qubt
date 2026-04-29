@@ -33,7 +33,7 @@
           <div class="tutorial-card">
             {{ with $page.Params.image }}
             <a href="{{ $page.RelPermalink }}">
-              <img src="{{ . }}" alt="{{ $page.Title }}" class="tutorial-card-image" loading="lazy" />
+              <img src="{{ . }}" alt="{{ $page.Title }}" class="tutorial-card-image" loading="lazy" width="300"/>
             </a>
             {{ end }}
             <h4 class="tutorial-card-title">

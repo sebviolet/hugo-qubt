@@ -35,15 +35,6 @@
 @font-face {
   font-family: "JetBrainsMono Nerd Font";
   src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
-  font-display: optional;
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Jost";
-  src: url('/fonts/Jost-500-Medium.ttf') format('truetype');
-  font-display: optional;
   font-weight: normal;
   font-style: normal;
 }
@@ -181,8 +172,7 @@ html {
 body {
   background-color: var(--tokyonight-bg);
   color: var(--tokyonight-fg);
-  font-family: 'Jost', sans-serif;
-  font-display: optional;
+  font-family: 'JetBrainsMono Nerd Font';
   margin: 0;
   line-height: 1.5;
 }
@@ -240,8 +230,8 @@ dd {
 }
 
 .subnav a {
-  /* margin-top: 2rem; */
-  /* margin-bottom: 2rem; */
+  /* margin-bot  /* margin-top: 2rem; */
+  margin-bottom: 2rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -262,15 +252,13 @@ h6 {
 h1 {
   color: var(--tokyonight-blue);
   font-size: 1.3rem;
-  font-family: 'Jost', sans-serif;
-  font-display: optional;
+  font-family: sans-serif;
 }
 
 h2 {
   color: var(--cyn);
   line-height: 1.2;
-  font-family: 'Jost', sans-serif;
-  font-display: optional;
+  font-family: sans-serif;
 }
 
 h3 {
@@ -312,7 +300,6 @@ h4:hover .anchor {
 
 kbd {
   font-family: "JetBrainsMono Nerd Font";
-  font-display: optional;
   font-weight: 200;
 }
 
@@ -325,6 +312,7 @@ pre {
   box-sizing: border-box;
 }
 
+
 code {
   color: var(--mag);
   word-break: break-word;
@@ -335,7 +323,6 @@ pre,
 code {
   /* font-size: 0.75em; */
   font-family: "JetBrainsMono Nerd Font";
-  font-display: optional;
 }
 
 strong {
@@ -430,7 +417,6 @@ strong {
 /*
  * Site pages
  */
-
 .site-post {
   margin-bottom: 2rem;
 }
@@ -453,7 +439,6 @@ strong {
 /*
  * Footer
  */
-
 .site-footer {
   padding: 1.3rem 0;
   margin-top: 1rem;
@@ -580,6 +565,8 @@ hr {
   color: #232635;
 }
 
+/*.newsletter-text {}*/
+
 .register-button {
   width: 60%;
   padding: 10px 10px;
@@ -648,7 +635,7 @@ aside.content-panel {
 }
 
 .post-hero img {
-  width: 100%;
+  width: 800px;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -685,14 +672,14 @@ aside.content-panel {
   }
 }
 
-.tutorial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
+/* .tutorial-grid { */
+/*   display: grid; */
+/*   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
+/*   gap: 2rem; */
+/*   max-width: 1280px; */
+/*   margin: 0 auto; */
+/*   padding: 0 1rem; */
+/* } */
 
 .tutorial-card-title {
   font-size: 1.2rem;
@@ -721,7 +708,7 @@ aside.content-panel {
 }
 
 .tutorial-card {
-  width: 426px;
+  width: 400px;
   /* max-width: 480px; */
   background-color: var(--blk);
   border: 1px solid var(--blu);
@@ -830,7 +817,6 @@ td {
 }
 
 @media screen and (max-width: 768px) {
-
   table,
   thead,
   tbody,
