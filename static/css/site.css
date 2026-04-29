@@ -1,6 +1,3 @@
-/*
- * Globals
- */
 :root {
   --tokyonight-bg: #1a1b26;
   --tokyonight-fg: #c0caf5;
@@ -33,7 +30,7 @@
 }
 
 @font-face {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
   src: url('/fonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -172,7 +169,7 @@ html {
 body {
   background-color: var(--tokyonight-bg);
   color: var(--tokyonight-fg);
-  font-family: 'JetBrainsMono Nerd Font';
+  font-family: 'JetBrainsMono Nerd Font', sans-serif;
   margin: 0;
   line-height: 1.5;
 }
@@ -299,7 +296,7 @@ h4:hover .anchor {
 }
 
 kbd {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
   font-weight: 200;
 }
 
@@ -322,16 +319,16 @@ code {
 pre,
 code {
   /* font-size: 0.75em; */
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
 }
 
 strong {
   font-weight: 700;
 }
 
-.content {
+/*.content {
   margin-top:
-}
+}*/
 
 .logo {
   display: block;
@@ -671,15 +668,6 @@ aside.content-panel {
     scroll-snap-align: start;
   }
 }
-
-/* .tutorial-grid { */
-/*   display: grid; */
-/*   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
-/*   gap: 2rem; */
-/*   max-width: 1280px; */
-/*   margin: 0 auto; */
-/*   padding: 0 1rem; */
-/* } */
 
 .tutorial-card-title {
   font-size: 1.2rem;
