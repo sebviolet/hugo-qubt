@@ -16,9 +16,7 @@
     {{ partial "header.html" . }}
 
     <main class="container">
-
       <h1 class="site-post-title center" style="margin-bottom: 2rem;">Blog</h1>
-
       <div class="tutorial-grid">
         {{ $paginator := .Paginate .Pages }}
         {{ range $page := $paginator.Pages }}
@@ -28,7 +26,6 @@
             <img src="{{ . | relURL }}" alt="{{ $page.Title }}" class="tutorial-card-image" loading="lazy" />
           </a>
           {{ end }}
-
           <h4 class="tutorial-card-title">
             <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
           </h4>
@@ -37,13 +34,11 @@
         </div>
         {{ end }}
       </div>
-
       {{ if gt $paginator.TotalPages 1 }}
       <div style="margin-top: 2rem; text-align: center;">
         {{ partial "pagination.html" . }}
       </div>
       {{ end }}
-
     </main>
 
     {{ partial "footer.html" . }}

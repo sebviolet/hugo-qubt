@@ -10,7 +10,7 @@ image: /img/french_family_with_IA.png
 
 # Bienvenue sur le site de la French Family !
 
-## Au menu:
+## Au menu
 
 - **L'univers de One Piece**: Depuis plus de 25 ans, un petit équipage sur un bateau vogue vers un rêve impossible. Mais derrière les combats épiques et les pouvoirs de fruits du démon se cache une fresque humaine d'une profondeur rare. Dans cet article, nous allons voir comment One Piece a réussi à créer un lien émotionnel unique avec ses lecteurs, transformant un simple manga de pirates en une leçon de vie sur la liberté, l'amitié et la poursuite de ses rêves, coûte que coûte.
 

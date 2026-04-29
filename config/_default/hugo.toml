@@ -1,6 +1,6 @@
 baseURL = 'https://www.frenchfamily.fr/'
 title = 'French Family'
-languageCode = 'fr-fr'
+locale = 'fr-fr'
 buildFuture = true
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
