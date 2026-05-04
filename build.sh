@@ -26,7 +26,7 @@ main() {
   # Define tool versions
   DART_SASS_VERSION=1.99.0
   GO_VERSION=1.26.2
-  HUGO_VERSION=0.161.0
+  HUGO_VERSION=0.161.1
   NODE_VERSION=24.15.0
 
   # Set the build timezone

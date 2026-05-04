@@ -7,7 +7,6 @@ enableRobotsTXT = true
 
 [markup.highlight]
   style = "catppuccin-mocha"
-  # uses inline styles (easy, no CSS setup)
   noClasses = true
 
 [taxonomies]
