@@ -478,7 +478,7 @@ strong {
   flex-direction: column;
   justify-content: flex-end;
   font-weight: bold;
-  background-image: url("/img/shaded_landscape.jpg");
+  background-image: url("/img/shaded_landscape.webp");
   background-size: cover;
   background-position: center;
   color: #1a1b26;

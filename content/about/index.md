@@ -5,7 +5,7 @@ date: 2026-04-08T12:00:00+02:00
 draft: false
 tags: ["about", "intro"]
 description: "À propos de la French Family"
-image: /img/french_family_with_IA.png
+image: /img/french_family_with_IA.webp
 ---
 
 # Bienvenue sur le site de la French Family !
