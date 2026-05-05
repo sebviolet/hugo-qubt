@@ -1,14 +1,17 @@
-{{ with site.Menus.footer }}
-<nav class="menu">
-  {{ range . }}
-  {{ if $.IsMenuCurrent .Menu . }}
-  <a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
-  {{ else }}
-  <a href="{{ .URL }}">{{ .Name }}</a>
+<footer class="site-footer">
+  {{ with site.Menus.footer }}
+  <nav class="footer-nav" aria-label="Footer Navigation">
+    {{ range . }}
+    <a href="{{ .URL }}" 
+       class="nav-link {{ if $.IsMenuCurrent .Menu . }}active{{ end }}" 
+       {{ if $.IsMenuCurrent .Menu . }}aria-current="page"{{ end }}>
+      {{ .Name }}
+    </a>
+    {{ end }}
+  </nav>
   {{ end }}
-  {{ end }}
-</nav>
-{{ end }}
 
-<br>
-<center>[2026 French Family]</center>
+  <div class="copyright">
+    &copy; {{ now.Format "2006" }} French Family
+  </div>
+</footer>

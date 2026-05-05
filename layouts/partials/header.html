@@ -4,160 +4,37 @@
       <div class="nav-logo">
         <a class="navbar-brand" href="/">French Family</a>
       </div>
+      <!-- Mobile navigation toggle button -->
+      <button id="nav-toggler" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="mobile-nav-panel">
+        <!-- Example SVG for a hamburger icon -->
+        <svg class="hamburger-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </button>
       {{ partial "nav.html" . }}
+      <!-- Theme switcher button -->
+      <div class="nav-right">
+        <button id="theme-switcher-btn" class="theme-switcher" aria-label="Toggle dark mode">
+          <!-- Example SVG for a sun/moon icon -->
+          <svg class="hamburger-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
+  <!-- Mobile navigation panel (initially hidden) -->
+  <div id="mobile-nav-panel" class="mobile-nav hidden">
+    <!-- Content from nav.html or a simplified mobile menu structure -->
+    <ul class="mobile-nav-list">
+      {{ range .Site.Menus.main }}
+      <li><a class="mobile-nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
 </header>
-
-<style>
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* this aligns logo + nav to bottom */
-    padding: 1rem 0;
-  }
-
-  .nav-logo {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-  }
-
-  .navbar-brand {
-    text-decoration: none;
-    color: white;
-  }
-
-  .nav-menu {
-    display: flex;
-    align-items: flex-end;
-    /* ensure nav links align with logo */
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .nav-logo .navbar-brand {
-    font-size: 1.6rem;
-    font-weight: bold;
-    background: linear-gradient(to right, #7aa2f7, #ad8ee6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: row;
-    list-style: none;
-    gap: 2rem;
-    padding-left: 0;
-  }
-
-  .nav-item {
-    display: inline-block;
-  }
-
-  .nav-link {
-    text-decoration: none;
-    color: #c0caf5;
-    padding: 0.5rem 1rem;
-  }
-
-  .nav-link:hover {
-    color: #7aa2f7;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .hamburger-icon {
-    width: 24px;
-    height: 24px;
-    color: #c0caf5;
-  }
-
-  .nav-right {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .theme-switcher {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Mobile nav panel */
-  .mobile-nav {
-    background-color: #1a1b26;
-    padding: 1rem;
-  }
-
-  .mobile-nav-list {
-    list-style: none;
-    padding-left: 0;
-  }
-
-  .mobile-nav-link {
-    display: block;
-    padding: 0.5rem 0;
-    color: #c0caf5;
-    text-decoration: none;
-    border-bottom: 1px solid #292d3e;
-  }
-
-  .mobile-nav-link:hover {
-    color: #7aa2f7;
-  }
-
-  .hidden {
-    display: none !important;
-  }
-
-  /* Mobile only */
-  @media (max-width: 768px) {
-    .nav-logo {
-      padding-left: 1rem;
-    }
-
-    .nav-toggle {
-      padding-right: 1rem;
-    }
-  }
-
-  /* Show desktop nav at large screens */
-  @media screen and (min-width: 1024px) {
-    .nav-menu {
-      display: flex;
-    }
-
-    .nav-toggle {
-      display: none;
-    }
-
-    .mobile-nav {
-      display: none !important;
-    }
-  }
-</style>
 
 <script>
   const navToggler = document.getElementById('nav-toggler');
